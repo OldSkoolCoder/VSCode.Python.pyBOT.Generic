@@ -1,0 +1,46 @@
+{
+    "socials": [
+        {
+            "name": "Discord",
+            "image": "Discord",
+            "info": " https://discord.gg/8tMgG4N",
+            "imageBackColour": "Black"
+        },
+        {
+            "name": "Twitter",
+            "image": "Twitter",
+            "info": "@OldSkoolCoder",
+            "imageBackColour": "Black"
+        },
+        {
+            "name": "YouTube",
+            "image": "YouTube",
+            "info": "youtube.com/OldSkoolCoder",
+            "imageBackColour": "Red"
+        },
+        {
+            "name": "Web",
+            "image": "Web",
+            "info": "www.oldskoolcoder.co.uk",
+            "imageBackColour": "Black"
+        },
+        {
+            "name": "Patreon",
+            "image": "Patreon",
+            "info": "patreon.com/OldSkoolCoder",
+            "imageBackColour": "Black"
+        },
+        {
+            "name": "PayPal",
+            "image": "PayPal",
+            "info": "OldSkoolCoder@Outlook.com",
+            "imageBackColour": "LightGrey"
+        },
+        {
+            "name": "Email",
+            "image": "Email",
+            "info": "OldSkoolCoder@Outlook.com",
+            "imageBackColour": "Black"
+        }
+    ]
+}

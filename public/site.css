@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('http://fonts.cdnfonts.com/css/commodore-64-pixelized');
+
+@font-face {
+    font-family: 'Commodore-PET';
+        src: url('/Commodore-PET.ttf.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+.app{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    background-color: blue;
+    border-color: black;
+    border-style: dotted;
+}
+
+.appGameStatus{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    border-color: black;
+    border-style: dotted;
+}
+
+div {
+    color: White;
+    /* display: position; */
+    /* position: absolute; */
+    font-family: "Nova Square", cursive;
+}
+
+#StreamTitle{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1144px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#MainScreen{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 1144px;
+    height: 640px;
+    font-size: 45px;
+    border-color: black;
+    border-style: solid;
+}
+
+#WebCamera{
+    position: absolute;
+    top: 0px;
+    left: 1152px;
+    width: 295px;
+    height: 163px;
+    font-size: 45px;
+    border-color: black;
+    border-style: solid;
+}
+
+#TwitchChat{
+    position: absolute;
+    top: 175px;
+    left: 1152px;
+    width: 295px;
+    height: 500px;
+    font-size: 45px;
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+}
+
+#ChannelOwner{
+    position: absolute;
+    top: 680px;
+    left: 1170px;
+    font-size: 150px;
+    font-family: 'ModeNine';
+}
+
+#Socials{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 1124px;
+    font-size: 20px;
+    color:white;
+}
+
+.subSocials{
+    width: 33%;
+    font-size: 17px;
+    color:white;
+}
+
+#Banner{
+    position: absolute;
+    top: 730px;
+    left: 0px;
+    width: 1150px;
+    height: 32px;
+    font-size: 28px;
+    background-color: White;
+    color: Black;
+}
+
+.ScrollerMsg{
+    border:none;
+    /* border: solid;
+    border-color: red;
+    background-color: yellow; */
+}
+
+#LatestSub{
+    position: absolute;
+    top: 765px;
+    left: 0px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#LatestFollow{
+    position: absolute;
+    top: 765px;
+    left: 380px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#LatestCheer{
+    position: absolute;
+    top: 765px;
+    left: 760px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.invisible{
+    display: none !important;
+}
+
+#imageChat{
+    width: 99%;
+    height: 99%;
+    border-color: black;
+    border-style: dashed;
+    display: flex;
+    margin: auto;
+}
+
+#imgChat{
+    display: block;
+    margin: auto;
+    border-style: groove;
+    border-color: aqua;
+}

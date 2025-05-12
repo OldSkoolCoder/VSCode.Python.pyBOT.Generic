@@ -1,0 +1,123 @@
+@import url('http://fonts.cdnfonts.com/css/commodore-64-pixelized');
+
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div {
+    color: White;
+    display: position;
+    position: absolute;
+    font-family: "Commodore 64 Pixelized", cursive;}
+
+.BlackBackground{
+    background-color: Black;
+}
+
+#StreamTitle{
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#ChannelOwner{
+    top: 720px;
+    left: 30px;
+    width: 200px;
+    font-size: 50px;
+}
+
+#MainScreen{
+    top: 40px;
+    left: 305px;
+    width: 1150px;
+    height: 690px;
+    font-size: 45px;
+    background-color: blue;
+}
+
+#Socials{
+    top: 0px;
+    left: 550px;
+    font-size: 20px;
+    display: none;
+}
+
+#WebCamera{
+    top: 550px;
+    left: 0px;
+    width: 300px;
+    height: 172px;
+    font-size: 45px;
+    background-color: blue;
+}
+
+#TwitchChat{
+    top: 40px;
+    left: 0px;
+    width: 300px;
+    height: 500px;
+    font-size: 45px;
+    background-color: blue;
+}
+
+#Banner{
+    top: 850px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+    font-family: "LED Display7", cursive;
+    font-size: 35px;
+    background-color: White;
+    color: Black;
+}
+
+#LatestSub{
+    top: 765px;
+    left: 0px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    display: none;
+}
+
+#LatestFollow{
+    top: 765px;
+    left: 380px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+    display: none;
+}
+
+#LatestCheer{
+    top: 765px;
+    left: 760px;
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+    display: none;
+}
+
+#message{
+    width: 50vw;
+    height: 50vh;
+    display: position;
+    top: 2%;
+    left: 2%;
+    position: absolute;
+    font-family: "Orbitron", cursive;
+}
+
+.invisible{
+    display: none !important;
+}

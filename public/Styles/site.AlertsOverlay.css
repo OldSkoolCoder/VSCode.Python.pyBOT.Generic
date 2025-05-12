@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('http://fonts.cdnfonts.com/css/commodore-64-pixelized');
+
+@font-face {
+    font-family: 'Commodore-PET';
+        src: url('/Commodore-PET.ttf.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+.app{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    background-color: blue;
+    /* border-color: black;
+    border-style: dotted; */
+}
+
+#imageChat{
+    display: none;
+    /* border-color: black;
+    border-style: dotted; */
+}
+
+.show{
+    display: flex !important;
+}
+
+.invisible{
+    display: none;
+}
+
+.appGameStatus{
+    /* width: 100vw;
+    height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    /* border-color: black;
+    border-style: dotted; */
+}
+
+.appChat{
+    /* width: 100vw;
+    height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    /* border-color: black;
+    border-style: dotted; */
+}
+
+#TwitchChat{
+    background-color: #0000AA;
+    top: 175px;
+    left: 1154px;
+    width: 295px;
+    height: 500px;
+    font-size: 14px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+.chat-User
+{
+    font-family: 'Commodore-PET';
+    position: relative;
+    background-color: #333333;
+    color: white;
+    border: 3px solid #FFFFFF;
+    padding: 7px;
+    margin: 0px;
+    border-radius: 10px;
+    z-index: 1;
+    font-size: 10;
+}   
+
+.chat-Message
+{
+    font-family: 'Commodore-PET';
+    position: relative;
+    background-color: #0000AA;
+    color: #0088FF;
+    border: 3px solid #808080;
+    padding: 10px;
+    top:-8px;
+    border-radius: 10px;
+    font-size: larger; 
+} 
+
+.chat-Scrolling
+{
+    animation-iteration-count: 1;
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+
+.chat-Message-Container
+{
+    position: relative;
+    /* border: 3px solid #404040; */
+}
+
+@keyframes slide  {
+    from{
+    transform: translateY(100%)
+    }
+    to{ 
+    transform: translateY(0%);
+    }
+}

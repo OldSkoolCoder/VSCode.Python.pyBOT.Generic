@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+        <link rel="stylesheet" href="site.GameOverlay.css">
+    </head>
+    <body>
+        <div id='app' class='appGameStatus'>
+            <div id='gameStatus'>
+                <div id="gameTitle"></div>
+                <div id="gamePlayers"></div>
+            </div>
+        </div>
+        <div id="pollRegion">
+            <div id="pollContainer">
+                <div id="pollQuestion">QUESTION</div>
+                <div id="pollResult">
+                    <div id="pollYes">YES</div>
+                    <div id="pollBar">
+                        <div id="pollBarLeft">50%</div>
+                        <div id="pollBarRight">50%</div>
+                    </div>
+                    <div id="pollNo">NO</div>
+                </div>
+            </div>
+        </div>
+        <script src='/config.js'></script>
+        <script src='/GameStatus.js'></script>
+    </body>
+</html>
+

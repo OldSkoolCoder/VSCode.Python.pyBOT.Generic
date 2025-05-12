@@ -1,0 +1,64 @@
+{
+  "entries": {
+    "CAN JOHN CODE IN PYTHON?": {
+      "WELLYES": 2,
+      "HELLNO": 3
+    },
+    "CAN JOHN DO THIS?": {
+      "YES": 0,
+      "NO": 0
+    },
+    "WHAT IS JOHNS FAVORITE COLOUR?": {
+      "YELLOW": 0,
+      "BLACKCURRENT": 0
+    },
+    "WHAT IS OLDSKOLCODERS FAVOURITE DRINK?": {
+      "RASBERRY": 0,
+      "BLACKCURRENT": 0
+    },
+    "IS THIS POSSIBLE?": {
+      "YES": 3,
+      "NO": 0
+    },
+    "TEST 2?": {
+      "YES": 1,
+      "NO": 2
+    },
+    "WHATS UR FAVORITE FOOD?": {
+      "CAKE": 1,
+      "SAUSAGES": 0
+    },
+    "A POLL": {
+      "THIS": 0,
+      "I": 0
+    },
+    "CAN JOHN CODE ?": {
+      "YES": 1,
+      "NO": 1
+    },
+    "CAN JOHN DO CSS OR WHAT ?": {
+      "YES": 2,
+      "NO": 3
+    },
+    "DOES JOHN KNOW HIS STUFF?": {
+      "YES": 3,
+      "NO": 1
+    },
+    "DOES 6502KEBAB KNOW HIS STUFF?": {
+      "YES": 4,
+      "NO": 1
+    },
+    "HAS ALTOFLUFF BEEN A STAR ?": {
+      "YES": 27,
+      "NO": 9
+    },
+    "HELP ME ?": {
+      "YES": 0,
+      "NO": 0
+    },
+    "IS CARTMAN A IDIOT?": {
+      "YES": 0,
+      "NO": 0
+    }
+  }
+}

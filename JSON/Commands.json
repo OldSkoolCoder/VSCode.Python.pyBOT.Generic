@@ -1,0 +1,48 @@
+{
+    "templateCommands":
+    {
+        "hiya": "{message.user}, heya!",
+        "discord": "Please join the {message.channel} Discord Server https://discord.gg/8tMgG4N, {message.user}",
+        "web": "Please visit my web site at http://www.oldSkoolCoder.co.uk, {message.user}",
+        "forum": "{message.user}, Please visit my forum site at http://forum.oldSkoolCoder.co.uk.",
+        "github": "Please visit my GitHub site at http://github.com/OldSkoolCoder, {message.user}",
+        "KickTools": "Tools : Editor : VSCode (http://https://code.visualstudio.com),  VSCode Extension : Kick Assembler (C64) for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=paulhocker.kick-assembler-vscode-ext) :  6502 Assembler : Kick Assembler (http://theweb.dk/KickAssembler) : Debugger : C64Debugger (https://sourceforge.net/projects/c64-debugger/) : CharPad Editor and SpritePad Editor (https://www.subchristsoftware.com)",
+        "CPSTools": "Tools : CBM Prg Studio (https://www.ajordison.co.uk)"
+    },
+    "descriptionCommands":
+    {
+        "hiya": "This is the BOT telling you Hi",
+        "discord": "Shows the Discord link for anybody to join",
+        "web": "Shows OldSkoolCoders Web Site Link",
+        "forum": "Shows OldSkoolCoders Forum Web Site Link",
+        "github": "Shows OldSkoolCoders GitHub Site Link",
+        "KickTools": "Shows The Kick Assembler tools OldSkoolCoders uses for coding retro",
+        "CPSTools": "Shows The CBMPrg Studio IDE OldSkoolCoders uses for Commodore Coding",
+        "mypoints": "Shows the users Points tally",
+        "top10": "Shows The top 10 users with Points",
+        "help": "shows a list of available commands",
+        "vote": "Allows Users to vote on current topic, Usage !vote 60",
+        "intro": "Allows the user to announce themselves",
+        "plank": "To Show the Streamer they're an idiot",
+        "play": "Allows the user to play custom sounds"
+    },
+    "adminCommands":
+    {
+        "mymods": "shows a list of all my channel moderators",
+        "addpoint": "adds points to a user, format !addpoint @user value (Mods Only)",
+        "subpoint": "subtracts points to a user, format !subpoint @user value (Mods Only)",
+        "addmod": "Adds a moderator to this twitch BOT (Admin Only)",
+        "removemod": "Removes a moderator from this twitch BOT (Admin Only)",
+        "startvote": "Start a vote, Usage !Vote Topic Max, E.g. !startvote defender 100 (Admin Only)",
+        "closevote": "Closes the current vote (Admin Only)",
+        "addstreamer": "self.processAddStreamer",
+        "addlisten": "self.processAddListen",
+        "dellisten": "self.processDelListen",
+        "addintro": "self.processAddIntro",
+        "delintro": "self.processDelIntro",
+        "addplank": "self.processAddPlank",
+        "delplank": "self.processDelPlank",
+        "addplay": "self.processAddPlay",
+        "delplay": "self.processDelPlay"
+    }
+}

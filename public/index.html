@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+        <script src='Scripts/config.js'></script>
+        <script src='Scripts/index.js'></script>
+        <link rel="stylesheet" href="Styles/site.css">
+        <link rel="stylesheet" href="Styles/site.Socials.css">
+        <link rel="stylesheet" href="Styles/spiral.css">
+    </head>
+    <body>
+        <div id='app' class='app'>
+            <canvas id="canvas" class="invisible" style="width: 100%; height: 100%; padding: 0;margin: 0;"></canvas>
+            <canvas id="lightning_canvas" class="invisible" style="width: 100%; height: 100%; padding: 0;margin: 0;"></canvas>
+            <canvas id="protonFig_canvas" class="invisible" width="1450" height="820" style="padding: 0;margin: 0;"></canvas>
+            <div id="Sprial" class="container invisible">
+                <div class="fib5">
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                </div>
+                <div class="fib8">
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                    <div class="spiral"></div>
+                </div>
+            </div>
+            <div id='StreamTitle'>Programming a Twitch BOT using Python</div>
+            <div id='WebCamera'></div>
+            <div id='TwitchChat'></div>
+            <div id='MainScreen'></div>
+            <div id='Banner'><marquee id='ScrollerMsg' class='invisible' behavior="scroll" direction="left">                         </marquee><marquee id='ScrollerAds' behavior="scroll" direction="left">Welcome to the stream, ......... Follows are greatly appreciated, and if you feel so inclined, Please hit that subscribe button - PRIME Users, you have one free subscription, so please use it on me :D</marquee></div>
+            <div id='Socials'>
+                <div id="socialCollection" class="socCollection">
+                    <div id="divImgSocial" class="divImgLogo">
+                        <img id="imgSocial" class="imgSocial" src="" alt="Social"></img>
+                    </div>
+                    <div id="socialInfo" class="socInformation"></div>
+                </div>
+            </div>
+            <div id="TwitchInformation">
+                <div id="twiLastSub" class="twiContainer">
+                    <div id='LatestSub'>Last Subscriber : OldSkoolCoder (10 mths)</div>
+                </div>
+                <div id="twiLastFollow" class="twiContainer">
+                    <div id='LatestFollow'>Last Follower : OldSkoolCoder</div>
+                </div>
+                <div id="twiLastCheer" class="twiContainer">
+                    <div id='LatestCheer'>Last Cheer : OldSkoolCoder (1000 Bits)</div>    
+                </div>
+            </div>
+            <div id='ChannelOwner'>OSK</div>
+            <div id='soundChat'><audio id='audioChat' src=''>Your browser does not support the <code>audio</code> element.</audio></div>
+            <!-- <div id='imageChat'><img id='imgChat' alt='MinionImage' scr='Dave-612x612.jpg' width='612' height='612'></img></div> -->
+        </div>
+    </body>
+
+    <script src='Scripts/plasma.js'></script>
+    <script src='Scripts/lightning.js'></script>
+    <script src='Scripts/protonFig.js'></script>
+    <script src='Scripts/socials.js'></script>
+    <script>
+        addEventListener("DOMContentLoaded", (event) => {
+            loadSocialsJSON();
+            moveSocialBanner();
+            moveTwitchInformationBanners();
+        });
+        
+    </script>
+</html>
+

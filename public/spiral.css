@@ -1,0 +1,145 @@
+:root {
+	--s: 0.75vmin;
+    --b: 0.5vmin;
+	--c: #fff0 calc(100% - var(--b)), #239effc7 calc(100% - var(--b) + 1px) 100%,#fff0;
+}
+
+body {
+	margin: 0;
+	/* background: radial-gradient(#003763, #000); */
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	left: 0;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.container > div {
+	position: absolute;
+	width: 200vmax;
+	height: 200vmax;
+}
+
+.spiral {
+    width: 100%;
+    height: 100%;
+	position: absolute;
+	/*** background spiral by Temani Afif ***/
+    background:  
+		radial-gradient(farthest-side at 100% 0   ,var(--c)),
+		radial-gradient(farthest-side at 100% 100%,var(--c)),
+		radial-gradient(farthest-side at 0    100%,var(--c)),
+		radial-gradient(farthest-side at 0    0   ,var(--c)),
+		radial-gradient(farthest-side at 100% 0   ,var(--c)),
+		radial-gradient(farthest-side at 100% 100%,var(--c)),
+		radial-gradient(farthest-side at 0    100%,var(--c)),
+		radial-gradient(farthest-side at 0    0   ,var(--c)),
+		radial-gradient(farthest-side at 100% 0   ,var(--c)),
+		radial-gradient(farthest-side at 100% 100%,var(--c)),
+		radial-gradient(farthest-side at 0    100%,var(--c)),
+		radial-gradient(farthest-side at 0    0   ,var(--c));
+	background-size:
+		calc(1*var(--s)) calc(1*var(--s)),
+		calc(1*var(--s)) calc(1*var(--s)),
+		calc(2*var(--s)) calc(2*var(--s)),
+		calc(3*var(--s)) calc(3*var(--s)),
+		calc(5*var(--s)) calc(5*var(--s)),
+		calc(8*var(--s)) calc(8*var(--s)),
+		calc(13*var(--s)) calc(13*var(--s)),
+		calc(21*var(--s)) calc(21*var(--s)),
+		calc(34*var(--s)) calc(34*var(--s)),
+		calc(55*var(--s)) calc(55*var(--s)),
+		calc(89*var(--s)) calc(89*var(--s)),
+		calc(144*var(--s)) calc(144*var(--s));
+	background-position:
+		calc(100vmax + 0*var(--s)) calc(100vmax + 0*var(--s)),
+		calc(100vmax + 0*var(--s)) calc(100vmax - 1*var(--s)),
+		calc(100vmax + 1*var(--s)) calc(100vmax - 1*var(--s)),
+		calc(100vmax + 0*var(--s)) calc(100vmax + 1*var(--s)),
+		calc(100vmax - 5*var(--s)) calc(100vmax - 1*var(--s)),
+		calc(100vmax - 5*var(--s)) calc(100vmax - 9*var(--s)),
+		calc(100vmax + 3*var(--s)) calc(100vmax - 9*var(--s)),
+		calc(100vmax - 5*var(--s)) calc(100vmax + 4*var(--s)),
+		calc(100vmax - 39*var(--s)) calc(100vmax - 9*var(--s)),
+		calc(100vmax - 39*var(--s)) calc(100vmax - 64*var(--s)),
+		calc(100vmax + 16*var(--s)) calc(100vmax - 64*var(--s)),
+		calc(100vmax - 39*var(--s)) calc(100vmax + 25*var(--s));
+	
+	background-repeat:no-repeat;
+	
+}
+
+
+.fib5 {
+	animation: spin 10s linear 0s infinite;
+}
+
+.fib5 .spiral:nth-child(2) {
+    transform: rotate(72deg);
+}
+
+.fib5 .spiral:nth-child(3) {
+    transform: rotate(144deg);
+}
+
+.fib5 .spiral:nth-child(4) {
+    transform: rotate(216deg);
+}
+
+.fib5 .spiral:nth-child(5) {
+    transform: rotate(288deg);
+}
+
+.fib8 {
+	animation: spin 10s linear 0s infinite reverse;
+}
+
+.fib8 .spiral {
+	transform: rotateY(180deg);
+	--c: #0000 calc(100% - var(--b)), #3690d8 calc(100% - var(--b) + 1px) 100%,#0000;
+}
+
+.fib8 .spiral:nth-child(2) {
+    transform: rotate(45deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(3) {
+    transform: rotate(90deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(4) {
+    transform: rotate(135deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(5) {
+    transform: rotate(180deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(6) {
+    transform: rotate(225deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(7) {
+    transform: rotate(270deg) rotateY(180deg);
+}
+
+.fib8 .spiral:nth-child(8) {
+    transform: rotate(315deg) rotateY(180deg);
+}
+
+
+@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

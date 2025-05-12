@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('http://fonts.cdnfonts.com/css/commodore-64-pixelized');
+
+@font-face {
+    font-family: 'Commodore-PET';
+        src: url('/Commodore-PET.ttf.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+.app{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    background-color: blue;
+    border-color: black;
+    border-style: dotted;
+}
+
+.appGameStatus{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1450px;
+    height: 820px;
+    display: flex;
+    border-color: black;
+    border-style: dotted;
+    overflow: hidden;
+}
+
+div {
+    /* color: White; */
+    display: position;
+    /* position: absolute; */
+    /* font-family: "Nova Square", cursive; */
+}
+
+.invisible{
+    display: none !important;
+}
+
+#gameStatus{
+    position: absolute;
+    top: 170px;
+    left: 1452px;
+    width: 265px;
+    height: 615px;
+    font-size: 20px;
+    background-color: #0000AA;
+    border-color: #0088FF;
+    font-family: 'commodore 64 pixelized' !important;
+    color: #0088FF;
+    /* background-color: white;
+    border-color: #AAFFEE;
+    font-family: 'Commodore-PET' !important;
+    color: #0000AA !important; */
+    border-style: solid;
+    border-width: 15px;
+    transition: left 2s;
+}
+/* #gameStatus:hover{
+    width: 495px;
+} */
+
+#gamePlayers{
+    top: 25px;
+}
+
+.gamePlayer{
+    width:265px;
+    height: 30px;
+    font-size: 15px;
+    /* border-style: solid;
+    border-width: 1px; */
+}
+
+.gameGuess{
+    top: 15px;
+    width: 130px;
+    font-size: 15px;
+    /* border-style: solid;
+    border-width: 1px; */
+    padding-left: 5px;
+}
+
+.gameResult{
+    top: 15px;
+    height: 12px;
+    left: 135px;
+    width: 130px;
+    font-size: 12px;
+    /* border-style: solid;
+    border-width: 1px; */
+}
+
+.gameResultDefault{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+}
+
+.gameResultDefaultB{
+    background-color: black;
+}
+
+.gameResultDefaultW{
+    background-color: white;
+}
+
+#pollRegion
+{
+    z-index: 100;
+    position: absolute;
+    top: 900px;
+    left: 200px;
+    width: 800px;
+    height: auto;
+    font-size: 25px;
+    background-color: grey;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 5px;
+    transition: top 2s;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#pollQuestion
+{
+    position: relative;
+}
+
+#pollYes, #pollNo
+{
+    display: flex;
+    flex: 0;
+    padding: 2px;
+}
+
+#pollYes
+{
+    padding-right: 4px;
+}
+
+#pollNo
+{
+    padding-left: 4px;
+}
+
+#containerBar
+{
+    border: solid;
+    display: flex;
+    position: relative;
+}
+#pollBar
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+#pollResult
+{
+    display: flex;
+    flex-direction: row;
+}
+#pollBarLeft
+{
+    width:50%;
+    background-color: green;
+    text-align: center;
+    transition: width 1s ease-in-out;
+}
+#pollBarRight
+{
+    width:50%;
+    background-color: red;
+    text-align: center;
+    transition: width 1s ease-in-out;
+}
+#pollContainer
+{
+    position: relative;
+}
